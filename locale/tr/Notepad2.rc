@@ -81,50 +81,50 @@ BEGIN
 		POPUP "Dosya &Modu"
 		BEGIN
 			MENUITEM "Salt Okunur&",					IDM_FILE_READONLY
-			MENUITEM "Lo&ck For Editing",			IDM_FILE_LOCK_EDITING
+			MENUITEM "Düzenleme İ&çin Kilitle",			IDM_FILE_LOCK_EDITING
 #if defined(_WIN64)
-			MENUITEM "&Large File Mode",			IDM_FILE_LARGE_FILE_MODE
+			MENUITEM "&Büyük Dosya modu",			IDM_FILE_LARGE_FILE_MODE
 #endif
 		END
-		MENUITEM "Re&vert\tF5",						IDM_FILE_REVERT
-		POPUP "Reloa&d"
+		MENUITEM "Geri Yük&le\tF5",						IDM_FILE_REVERT
+		POPUP "Yeni&den Yükle"
 		BEGIN
-			MENUITEM "As UTF-&8\tShift+F8",			CMD_RELOADUTF8
-			MENUITEM "As &ANSI\tCtrl+Shift+A",		CMD_RELOADANSI
-			MENUITEM "As &OEM\tCtrl+Shift+O",		CMD_RELOADOEM
+			MENUITEM "UTF-&8 olarak\tShift+F8",			CMD_RELOADUTF8
+			MENUITEM "&ANSI olarak\tCtrl+Shift+A",		CMD_RELOADANSI
+			MENUITEM "&OEM olarak\tCtrl+Shift+O",		CMD_RELOADOEM
 			MENUITEM SEPARATOR
-			MENUITEM "&Default Encoding\tCtrl+Alt+F",CMD_RECODEDEFAULT
-			MENUITEM "&With Encoding...\tF8",		IDM_RECODE_SELECT
+			MENUITEM "&Varsayılan Kodlama\tCtrl+Alt+F",CMD_RECODEDEFAULT
+			MENUITEM "&Kodlama ile...\tF8",		IDM_RECODE_SELECT
 			MENUITEM SEPARATOR
-			MENUITEM "&No File Variables\tAlt+F8",	CMD_RELOADNOFILEVARS
+			MENUITEM "&Dosya Değişkeni Yok\tAlt+F8",	CMD_RELOADNOFILEVARS
 #if defined(_WIN64)
-			MENUITEM "&Large File Mode",			IDM_FILE_LARGE_FILE_MODE_RELOAD
+			MENUITEM "&Büyük Dosya Modu",			IDM_FILE_LARGE_FILE_MODE_RELOAD
 #endif
 		END
-		POPUP "&Launch"
+		POPUP "&Çalıştır"
 		BEGIN
-			MENUITEM "Open Containing &Folder",		IDM_FILE_OPEN_CONTAINING_FOLDER
-			MENUITEM "Open As &Administrator",		IDM_FILE_RELAUNCH_ELEVATED
+			MENUITEM "Dosyayı İçeren Klasörü &Aç",		IDM_FILE_OPEN_CONTAINING_FOLDER
+			MENUITEM "&Yönetici Olarak Aç",		IDM_FILE_RELAUNCH_ELEVATED
 			MENUITEM SEPARATOR
-			MENUITEM "&New Window\tAlt+N",			IDM_FILE_NEWWINDOW
-			MENUITEM "&Empty Window\tAlt+0",		IDM_FILE_NEWWINDOW2
-			MENUITEM "&Restart",					IDM_FILE_RESTART
+			MENUITEM "&Yeni Pencere\tAlt+N",			IDM_FILE_NEWWINDOW
+			MENUITEM "&Boş Pencere\tAlt+0",		IDM_FILE_NEWWINDOW2
+			MENUITEM "&Yeniden Başlat",					IDM_FILE_RESTART
 			MENUITEM SEPARATOR
-			MENUITEM "Execute &Document\tCtrl+L",	IDM_FILE_LAUNCH
-			MENUITEM "Open &With...",				IDM_FILE_OPENWITH
-			MENUITEM "&Command...\tCtrl+R",			IDM_FILE_RUN
+			MENUITEM "Belgeyi Çalıştır\tCtrl+L",	IDM_FILE_LAUNCH
+			MENUITEM "Birlikte Aç...",				IDM_FILE_OPENWITH
+			MENUITEM "&Komut...\tCtrl+R",			IDM_FILE_RUN
 		END
 		MENUITEM SEPARATOR
-		POPUP "&Encoding"
+		POPUP "&Kodlama"
 		BEGIN
 			MENUITEM "&ANSI",						IDM_ENCODING_ANSI
 			MENUITEM "UTF-&8",						IDM_ENCODING_UTF8
 			MENUITEM "UTF-8 B&OM",					IDM_ENCODING_UTF8SIGN
 			MENUITEM "UTF-16&LE BOM",				IDM_ENCODING_UNICODE
 			MENUITEM "UTF-16&BE BOM",				IDM_ENCODING_UNICODEREV
-			MENUITEM "&More...\tF9",				IDM_ENCODING_SELECT
+			MENUITEM "&Daha Fazla...\tF9",				IDM_ENCODING_SELECT
 			MENUITEM SEPARATOR
-			MENUITEM "&Default...",					IDM_ENCODING_SETDEFAULT
+			MENUITEM "&Varsayılan...",					IDM_ENCODING_SETDEFAULT
 		END
 		POPUP "Line Endin&gs"
 		BEGIN
@@ -152,7 +152,7 @@ BEGIN
 		MENUITEM SEPARATOR
 		MENUITEM "E&xit\tAlt+F4",					IDM_FILE_EXIT
 	END
-	POPUP "&Edit"
+	POPUP "Dü&zenle"
 	BEGIN
 		MENUITEM "&Undo\tCtrl+Z",						IDM_EDIT_UNDO
 		MENUITEM "&Redo\tCtrl+Y",						IDM_EDIT_REDO
@@ -405,7 +405,7 @@ BEGIN
 			MENUITEM "Goto Selec&tion End\tCtrl+Shift+Period (>.)",	CMD_JUMP2SELEND
 		END
 	END
-	POPUP "&View"
+	POPUP "&Görünüm"
 	BEGIN
 		MENUITEM "Default &Code Font...\tAlt+F12",	IDM_VIEW_DEFAULT_CODE_FONT
 		MENUITEM "&Default Text Font...",			IDM_VIEW_DEFAULT_TEXT_FONT
@@ -482,7 +482,7 @@ BEGIN
 		END
 		MENUITEM "Toggle Full &Screen\tF11 [Esc]",	IDM_VIEW_TOGGLE_FULLSCREEN
 	END
-	POPUP "Sche&me"
+	POPUP "&Şema"
 	BEGIN
 		MENUITEM "&Syntax Scheme...\tF12",			IDM_VIEW_SCHEME
 		MENUITEM "&Customize Schemes...\tCtrl+F12",	IDM_VIEW_SCHEME_CONFIG
@@ -579,7 +579,7 @@ BEGIN
 			//MENUITEM "SV&G Document",				IDM_LEXER_SVG
 		END
 	END
-	POPUP "&Settings"
+	POPUP "&Ayarlar"
 	BEGIN
 		MENUITEM "Insert Tabs as &Spaces",			IDM_VIEW_TABSASSPACES
 		MENUITEM "&Tab Settings...\tCtrl+T",		IDM_VIEW_TABSETTINGS
@@ -705,7 +705,7 @@ BEGIN
 		MENUITEM "Save Settings &On Exit",			IDM_VIEW_SAVESETTINGS
 		MENUITEM "Sa&ve Settings Now\tF7",			IDM_VIEW_SAVESETTINGSNOW
 	END
-	POPUP "&Help"
+	POPUP "&Yardım"
 	BEGIN
 		MENUITEM "Project &Home",				IDM_HELP_PROJECT_HOME
 		MENUITEM "Latest &Release",				IDM_HELP_LATEST_RELEASE
