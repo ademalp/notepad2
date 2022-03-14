@@ -1550,6 +1550,9 @@ HMODULE LoadLocalizedResourceDLL(LANGID lang, LPCWSTR dllName) {
 	case LANG_GERMAN:
 		folder = L"de";
 		break;
+	case LANG_TURKISH:
+		folder = L"tr";
+		break;
 	case LANG_ITALIAN:
 		folder = L"it";
 		break;

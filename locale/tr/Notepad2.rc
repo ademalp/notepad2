@@ -1,9 +1,9 @@
 // Microsoft Visual C++ generated resource script.
 //
-#include "resource.h"
-#include "config.h"
-//#include "EditLexer.h"
-//#include "EditLexers/EditStyle.h"
+#include "../../src/resource.h"
+#include "../../src/config.h"
+#include "../../src/EditLexer.h"
+#include "../../src/EditLexers/EditStyle.h"
 
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
@@ -23,7 +23,7 @@
 // English (United States) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
 #pragma code_page(65001)
 
 /////////////////////////////////////////////////////////////////////////////
@@ -31,7 +31,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 // RT_MANIFEST
 //
 
-IDR_RT_MANIFEST         RT_MANIFEST             "..\\res\\Notepad2.exe.manifest"
+IDR_RT_MANIFEST         RT_MANIFEST             "..\\..\\res\\Notepad2.exe.manifest"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -40,28 +40,28 @@ IDR_RT_MANIFEST         RT_MANIFEST             "..\\res\\Notepad2.exe.manifest"
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDR_MAINWND             ICON                    "..\\res\\Notepad2.ico"
-IDI_RUN                 ICON                    "..\\res\\Run.ico"
-IDI_STYLES              ICON                    "..\\res\\Styles.ico"
+IDR_MAINWND             ICON                    "..\\..\\res\\Notepad2.ico"
+IDI_RUN                 ICON                    "..\\..\\res\\Run.ico"
+IDI_STYLES              ICON                    "..\\..\\res\\Styles.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Bitmap
 //
 
-IDR_MAINWND             BITMAP                  "..\\res\\Toolbar.bmp"
-IDB_OPEN_FOLDER         BITMAP                  "..\\res\\OpenFolder.bmp"
-IDB_NEXT                BITMAP                  "..\\res\\Next.bmp"
-IDB_PREV                BITMAP                  "..\\res\\Prev.bmp"
-IDB_PICK                BITMAP                  "..\\res\\Pick.bmp"
-IDB_ENCODING            BITMAP                  "..\\res\\Encoding.bmp"
+IDR_MAINWND             BITMAP                  "..\\..\\res\\Toolbar.bmp"
+IDB_OPEN_FOLDER         BITMAP                  "..\\..\\res\\OpenFolder.bmp"
+IDB_NEXT                BITMAP                  "..\\..\\res\\Next.bmp"
+IDB_PREV                BITMAP                  "..\\..\\res\\Prev.bmp"
+IDB_PICK                BITMAP                  "..\\..\\res\\Pick.bmp"
+IDB_ENCODING            BITMAP                  "..\\..\\res\\Encoding.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Cursor
 //
 
-IDC_COPY                CURSOR                  "..\\res\\Copy.cur"
+IDC_COPY                CURSOR                  "..\\..\\res\\Copy.cur"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -70,17 +70,17 @@ IDC_COPY                CURSOR                  "..\\res\\Copy.cur"
 
 IDR_MAINWND MENU
 BEGIN
-	POPUP "&File"
+	POPUP "&Dosya"
 	BEGIN
-		MENUITEM "&New\tCtrl+N",					IDM_FILE_NEW
-		MENUITEM "&Open...\tCtrl+O",				IDM_FILE_OPEN
-		MENUITEM "&Save\tCtrl+S",					IDM_FILE_SAVE
-		MENUITEM "Save &As...\tF6",					IDM_FILE_SAVEAS
-		MENUITEM "Save Cop&y...\tCtrl+F6",			IDM_FILE_SAVECOPY
+		MENUITEM "Ye&ni\tCtrl+N",					IDM_FILE_NEW
+		MENUITEM "&Aç...\tCtrl+O",				IDM_FILE_OPEN
+		MENUITEM "&Kaydet\tCtrl+S",					IDM_FILE_SAVE
+		MENUITEM "Farklı K&aydet...\tF6",					IDM_FILE_SAVEAS
+		MENUITEM "Kopya Ka&ydet...\tCtrl+F6",			IDM_FILE_SAVECOPY
 		MENUITEM SEPARATOR
-		POPUP "File &Mode"
+		POPUP "Dosya &Modu"
 		BEGIN
-			MENUITEM "&Read Only",					IDM_FILE_READONLY
+			MENUITEM "Salt Okunur&",					IDM_FILE_READONLY
 			MENUITEM "Lo&ck For Editing",			IDM_FILE_LOCK_EDITING
 #if defined(_WIN64)
 			MENUITEM "&Large File Mode",			IDM_FILE_LARGE_FILE_MODE
@@ -2175,7 +2175,7 @@ The ""Preview"" button will not apply any changes."
 
 END
 
-#if 0//NP2_ENABLE_LOCALIZE_LEXER_NAME
+#if NP2_ENABLE_LOCALIZE_LEXER_NAME
 // string table for lexers, see EditLexer.h
 STRINGTABLE
 BEGIN
@@ -2187,7 +2187,7 @@ BEGIN
 END
 #endif // NP2_ENABLE_LOCALIZE_LEXER_NAME
 
-#if 0//NP2_ENABLE_LOCALIZE_STYLE_NAME
+#if NP2_ENABLE_LOCALIZE_STYLE_NAME
 // string table for styles, see EditLexers/EditStyleX.h
 STRINGTABLE
 BEGIN
@@ -2251,7 +2251,7 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-#include "Notepad2.ver"
+#include "../../src/Notepad2.ver"
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
 

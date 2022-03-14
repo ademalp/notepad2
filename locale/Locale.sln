@@ -27,6 +27,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "metapath(ko)", "ko\metapath
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Notepad2(ko)", "ko\Notepad2(ko).vcxproj", "{5ED22073-A1C4-4439-AD95-15000C7CDC1B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "metapath(tr)", "tr\metapath(tr).vcxproj", "{E64357C9-65A2-4BF9-91E0-BC52CB8A9350}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Notepad2(tr)", "tr\Notepad2(tr).vcxproj", "{5ED22073-A1C4-4439-AD95-15000C7CDC1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM

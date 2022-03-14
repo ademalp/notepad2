@@ -2240,6 +2240,9 @@ void ValidateUILangauge(void) {
 	case LANG_KOREAN:
 		languageMenu = IDM_LANG_KOREAN;
 		break;
+	case LANG_TURKISH:
+		languageMenu = IDM_LANG_TURKISH;
+		break;
 	case LANG_NEUTRAL:
 	default:
 		languageMenu = IDM_LANG_USER_DEFAULT;
@@ -2263,7 +2266,7 @@ void SetUILanguage(int menu) {
 	case IDM_LANG_CHINESE_TRADITIONAL:
 		lang = MAKELANGID(LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL);
 		break;
-	case LANG_GERMAN:
+	case IDM_LANG_GERMAN:
 		lang = MAKELANGID(LANG_GERMAN, SUBLANG_GERMAN);
 		break;
 	case IDM_LANG_ITALIAN:
@@ -2274,6 +2277,9 @@ void SetUILanguage(int menu) {
 		break;
 	case IDM_LANG_KOREAN:
 		lang = MAKELANGID(LANG_KOREAN, SUBLANG_DEFAULT);
+		break;
+	case IDM_LANG_TURKISH:
+		lang = MAKELANGID(LANG_TURKISH, SUBLANG_DEFAULT);
 		break;
 	}
 
@@ -4642,6 +4648,8 @@ LRESULT MsgCommand(HWND hwnd, WPARAM wParam, LPARAM lParam) {
 #if NP2_ENABLE_APP_LOCALIZATION_DLL
 	case IDM_LANG_USER_DEFAULT:
 	case IDM_LANG_ENGLISH_US:
+	case IDM_LANG_GERMAN:
+	case IDM_LANG_TURKISH:
 	case IDM_LANG_CHINESE_SIMPLIFIED:
 	case IDM_LANG_CHINESE_TRADITIONAL:
 	case IDM_LANG_JAPANESE:
