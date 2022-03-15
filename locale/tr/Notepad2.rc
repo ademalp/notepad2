@@ -185,33 +185,33 @@ BEGIN
 		MENUITEM SEPARATOR
 		POPUP "&Seçim"
 		BEGIN
-			MENUITEM "&Duplicate\tAlt+D",				IDM_EDIT_SELECTIONDUPLICATE
+			MENUITEM "&Çoğalt\tAlt+D",				IDM_EDIT_SELECTIONDUPLICATE
 			MENUITEM SEPARATOR
-			MENUITEM "T&oggle Line Comment\tCtrl+/",	IDM_EDIT_LINECOMMENT
-			MENUITEM "Block &Comment\tCtrl+Q",			IDM_EDIT_STREAMCOMMENT
-			MENUITEM "&Indent\tTab",					IDM_EDIT_INDENT
-			MENUITEM "&Unindent\tShift+Tab",			IDM_EDIT_UNINDENT
+			MENUITEM "Açıklama Satırı\tCtrl+/",	IDM_EDIT_LINECOMMENT
+			MENUITEM "Açıklama Satırları\tCtrl+Q",			IDM_EDIT_STREAMCOMMENT
+			MENUITEM "&Girinti Ekle\tTab",					IDM_EDIT_INDENT
+			MENUITEM "&Girintiyi Sil\tShift+Tab",			IDM_EDIT_UNINDENT
 			MENUITEM SEPARATOR
-			MENUITEM "Strip &Trailing Blanks\tAlt+T",	IDM_EDIT_TRIMLINES
-			MENUITEM "Strip &First Character\tAlt+Z",	IDM_EDIT_STRIP1STCHAR
-			MENUITEM "Strip &Last Character\tAlt+L",	IDM_EDIT_STRIPLASTCHAR
-			MENUITEM "Strip Leading Blan&ks",			IDM_EDIT_TRIMLEAD
+			MENUITEM "Sondaki Boşlukları Temizle\tAlt+T",	IDM_EDIT_TRIMLINES
+			MENUITEM "İlk Harfi Temizle\tAlt+Z",	IDM_EDIT_STRIP1STCHAR
+			MENUITEM "Son Harfi Temizle\tAlt+L",	IDM_EDIT_STRIPLASTCHAR
+			MENUITEM "Baştaki Boşlukları Temizle",			IDM_EDIT_TRIMLEAD
 			MENUITEM SEPARATOR
-			MENUITEM "Merge &Blank Lines\tAlt+B",		IDM_EDIT_MERGEBLANKLINES
-			MENUITEM "&Remove Blank Lines\tAlt+R",		IDM_EDIT_REMOVEBLANKLINES
-			MENUITEM "&Pad With Spaces\tAlt+P",			IDM_EDIT_PADWITHSPACES
-			MENUITEM "Compress &Whitespace\tAlt+W",		IDM_EDIT_COMPRESSWS
+			MENUITEM "Boş Satırları Birleştir\tAlt+B",		IDM_EDIT_MERGEBLANKLINES
+			MENUITEM "Boş Satırları Sil\tAlt+R",		IDM_EDIT_REMOVEBLANKLINES
+			MENUITEM "Boşlukla Doldur\tAlt+P",			IDM_EDIT_PADWITHSPACES
+			MENUITEM "Boşlukları Birleştir\tAlt+W",		IDM_EDIT_COMPRESSWS
 		END
-		POPUP "&Enclose Selection"
+		POPUP "Seçime Dahil Et"
 		BEGIN
-			MENUITEM "&With...\tAlt+Q",					IDM_EDIT_ENCLOSESELECTION
-			MENUITEM "&HTML/XML Tag...\tAlt+X",			IDM_EDIT_INSERT_XMLTAG
+			MENUITEM "&Birlikte...\tAlt+Q",					IDM_EDIT_ENCLOSESELECTION
+			MENUITEM "&HTML/XML Etiketi...\tAlt+X",			IDM_EDIT_INSERT_XMLTAG
 			MENUITEM SEPARATOR
-			MENUITEM "Triple &Single Quotes\tCtrl+3",	CMD_ENCLOSE_TRIPLE_SQ
-			MENUITEM "Triple &Double Quotes\tCtrl+6",	CMD_ENCLOSE_TRIPLE_DQ
-			MENUITEM "Triple &Backticks\tCtrl+9",		CMD_ENCLOSE_TRIPLE_BT
+			MENUITEM "Üçlü Tek Tırnak\tCtrl+3",	CMD_ENCLOSE_TRIPLE_SQ
+			MENUITEM "Üçlü Tırnak\tCtrl+6",	CMD_ENCLOSE_TRIPLE_DQ
+			MENUITEM "Üçlü Kesme\tCtrl+9",		CMD_ENCLOSE_TRIPLE_BT
 		END
-		POPUP "&Lines"
+		POPUP "&Satır"
 		BEGIN
 			MENUITEM "Move &Up\tAlt+Up",				IDM_EDIT_MOVELINEUP
 			MENUITEM "Mo&ve Down\tAlt+Down",			IDM_EDIT_MOVELINEDOWN
@@ -231,31 +231,31 @@ BEGIN
 			MENUITEM "&Split Lines\tCtrl+I",			IDM_EDIT_SPLITLINES
 			MENUITEM "Join &Paragraphs\tCtrl+Shift+J",	IDM_EDIT_JOINLINESEX
 		END
-		POPUP "Con&vert"
+		POPUP "Dönüştür"
 		BEGIN
-			MENUITEM "&Upper Case\tCtrl+Shift+U",		IDM_EDIT_CONVERTUPPERCASE
-			MENUITEM "&Lower Case\tCtrl+U",				IDM_EDIT_CONVERTLOWERCASE
-			MENUITEM "In&vert Case\tCtrl+Alt+U",		IDM_EDIT_INVERTCASE
-			MENUITEM "Title &Case\tCtrl+Alt+I",			IDM_EDIT_TITLECASE
-			MENUITEM "&Sentence Case\tCtrl+Alt+O",		IDM_EDIT_SENTENCECASE
-			POPUP "Oth&er Conversions"
+			MENUITEM "&Büyük Harf\tCtrl+Shift+U",		IDM_EDIT_CONVERTUPPERCASE
+			MENUITEM "&Küçük Harf\tCtrl+U",				IDM_EDIT_CONVERTLOWERCASE
+			MENUITEM "Büyük Küçük Harf Ters Çevir\tCtrl+Alt+U",		IDM_EDIT_INVERTCASE
+			MENUITEM "Her Kelimenin Baş Harfi Büyük\tCtrl+Alt+I",			IDM_EDIT_TITLECASE
+			MENUITEM "Cümlenin Baş Harfi Büyük\tCtrl+Alt+O",		IDM_EDIT_SENTENCECASE
+			POPUP "Diğer"
 			BEGIN
-				MENUITEM "Halfwidth Form to Full&width",		IDM_EDIT_MAP_FULLWIDTH
-				MENUITEM "Fullwidth Form to H&alfwidth",		IDM_EDIT_MAP_HALFWIDTH
+				MENUITEM "Yarım Genişlik Formundan Tam Genişliğe",		IDM_EDIT_MAP_FULLWIDTH
+				MENUITEM "Tam Genişlik Formundan Yarım Genişliğe ",		IDM_EDIT_MAP_HALFWIDTH
 				MENUITEM SEPARATOR
-				MENUITEM "Chinese Traditional to &Simplified",	IDM_EDIT_MAP_SIMPLIFIED_CHINESE
-				MENUITEM "Chinese Simplified to &Traditional",	IDM_EDIT_MAP_TRADITIONAL_CHINESE
+				MENUITEM "Geleneksel Çinceden Basitleştirilmişe ",	IDM_EDIT_MAP_SIMPLIFIED_CHINESE
+				MENUITEM "Basitleştirilmiş Çinceden Geleneksele",	IDM_EDIT_MAP_TRADITIONAL_CHINESE
 				MENUITEM SEPARATOR
-				MENUITEM "Japanese Katakana to &Hiragana",		IDM_EDIT_MAP_HIRAGANA
-				MENUITEM "Japanese Hiragana to &Katakana",		IDM_EDIT_MAP_KATAKANA
+				MENUITEM "Katakana Japoncadan &Hiraganaya",		IDM_EDIT_MAP_HIRAGANA
+				MENUITEM "Hiragana Japoncadan &Katakanaya",		IDM_EDIT_MAP_KATAKANA
 				MENUITEM SEPARATOR
-				MENUITEM "Korean Han&ja to Hangul",		        IDM_EDIT_MAP_HANJA_HANGUL
-				MENUITEM "Korean Han&gul Decomposition",		IDM_EDIT_MAP_HANGUL_DECOMPOSITION
+				MENUITEM "Han&ja Koreceden Hangula",		        IDM_EDIT_MAP_HANJA_HANGUL
+				MENUITEM "Han&gul Korece Ayrıştırma",		IDM_EDIT_MAP_HANGUL_DECOMPOSITION
 				MENUITEM SEPARATOR
-				MENUITEM "&Bengali to Latin",					IDM_EDIT_MAP_BENGALI_LATIN
-				MENUITEM "C&yrillic to Latin",					IDM_EDIT_MAP_CYRILLIC_LATIN
-				MENUITEM "&Devanagari to Latin",				IDM_EDIT_MAP_DEVANAGARI_LATIN
-				MENUITEM "&Malayalam to Latin",					IDM_EDIT_MAP_MALAYALAM_LATIN
+				MENUITEM "&Bengalceden Latine",					IDM_EDIT_MAP_BENGALI_LATIN
+				MENUITEM "Kirilceden Latine",					IDM_EDIT_MAP_CYRILLIC_LATIN
+				MENUITEM "&Devanagariden Latine",				IDM_EDIT_MAP_DEVANAGARI_LATIN
+				MENUITEM "&Malayalamca Latine",					IDM_EDIT_MAP_MALAYALAM_LATIN
 			END
 			MENUITEM SEPARATOR
 			MENUITEM "&Tabify Selection\tCtrl+Shift+T",		IDM_EDIT_CONVERTSPACES
@@ -407,9 +407,9 @@ BEGIN
 	END
 	POPUP "&Görünüm"
 	BEGIN
-		MENUITEM "Default &Code Font...\tAlt+F12",	IDM_VIEW_DEFAULT_CODE_FONT
-		MENUITEM "&Default Text Font...",			IDM_VIEW_DEFAULT_TEXT_FONT
-		POPUP "C&aret Style"
+		MENUITEM "Varsayılan Kod Fontu...\tAlt+F12",	IDM_VIEW_DEFAULT_CODE_FONT
+		MENUITEM "Varsayılan Yazı Fontu...",			IDM_VIEW_DEFAULT_TEXT_FONT
+		POPUP "Şapka Stili"
 		BEGIN
 			MENUITEM "Block (&OVR Mode)",			IDM_VIEW_CARET_STYLE_BLOCK_OVR
 			MENUITEM SEPARATOR
