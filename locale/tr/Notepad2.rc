@@ -213,23 +213,23 @@ BEGIN
 		END
 		POPUP "&Satır"
 		BEGIN
-			MENUITEM "Move &Up\tAlt+Up",				IDM_EDIT_MOVELINEUP
-			MENUITEM "Mo&ve Down\tAlt+Down",			IDM_EDIT_MOVELINEDOWN
-			MENUITEM "T&ranspose\tAlt+S",				IDM_EDIT_LINETRANSPOSE
+			MENUITEM "Y&ukarı Taşı\tAlt+Up",				IDM_EDIT_MOVELINEUP
+			MENUITEM "Aşağı Ta&şı\tAlt+Down",			IDM_EDIT_MOVELINEDOWN
+			MENUITEM "Te&rs Çapraz\tAlt+S",				IDM_EDIT_LINETRANSPOSE
 			MENUITEM SEPARATOR
-			MENUITEM "S&ort Lines...\tAlt+O",			IDM_EDIT_SORTLINES
-			MENUITEM "&Modify Lines...\tAlt+M",			IDM_EDIT_MODIFYLINES
-			MENUITEM "Alig&n Lines...\tAlt+J",			IDM_EDIT_ALIGN
+			MENUITEM "Satırları Sırala...\tAlt+O",			IDM_EDIT_SORTLINES
+			MENUITEM "&Satırları Değiştir...\tAlt+M",			IDM_EDIT_MODIFYLINES
+			MENUITEM "Satırları Sırala...\tAlt+J",			IDM_EDIT_ALIGN
 			MENUITEM SEPARATOR
-			MENUITEM "&Duplicate Line\tCtrl+D",			IDM_EDIT_DUPLICATELINE
-			MENUITEM "Cu&t Line\tCtrl+Shift+X",			IDM_EDIT_CUTLINE
-			MENUITEM "&Copy Line\tCtrl+Shift+C",		IDM_EDIT_COPYLINE
-			MENUITEM "D&elete Line\tCtrl+Shift+D",		IDM_EDIT_DELETELINE
+			MENUITEM "Satırı Çoğalt\tCtrl+D",			IDM_EDIT_DUPLICATELINE
+			MENUITEM "Satırı Kes\tCtrl+Shift+X",			IDM_EDIT_CUTLINE
+			MENUITEM "Satırı Kopyala\tCtrl+Shift+C",		IDM_EDIT_COPYLINE
+			MENUITEM "Satırı Sil\tCtrl+Shift+D",		IDM_EDIT_DELETELINE
 			MENUITEM SEPARATOR
-			MENUITEM "&Join Lines\tCtrl+J",				IDM_EDIT_JOINLINES
-			MENUITEM "Column &Wrap...\tCtrl+Shift+W",	IDM_EDIT_COLUMNWRAP
-			MENUITEM "&Split Lines\tCtrl+I",			IDM_EDIT_SPLITLINES
-			MENUITEM "Join &Paragraphs\tCtrl+Shift+J",	IDM_EDIT_JOINLINESEX
+			MENUITEM "Satırları Birleştir\tCtrl+J",				IDM_EDIT_JOINLINES
+			MENUITEM "Sütun Kaydır...\tCtrl+Shift+W",	IDM_EDIT_COLUMNWRAP
+			MENUITEM "Satırları Böl\tCtrl+I",			IDM_EDIT_SPLITLINES
+			MENUITEM "Parağrafları Birleştir\tCtrl+Shift+J",	IDM_EDIT_JOINLINESEX
 		END
 		POPUP "Dönüştür"
 		BEGIN
